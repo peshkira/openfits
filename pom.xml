@@ -34,6 +34,12 @@
       </plugin>
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <id>OpenPlanets Maven repo at Github</id>
+      <url>https://github.com/openplanets/mvn-repo/tree/master/releases</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
     	<groupId>commons-configuration</groupId>
@@ -67,18 +73,25 @@
         <systemPath>${basedir}/lib/AES31.jar</systemPath>
     </dependency>
     <dependency>
-        <groupId>edu.harvard.hul.ois</groupId>
+        <groupId>edu.harvard.hul.ois.jhove</groupId>
         <artifactId>jhove</artifactId>
         <version>1.8</version>
         <scope>system</scope>
         <systemPath>${basedir}/lib/jhove/jhove.jar</systemPath>
     </dependency>
     <dependency>
-        <groupId>edu.harvard.hul.ois</groupId>
+        <groupId>edu.harvard.hul.ois.jhove</groupId>
         <artifactId>jhove-handler</artifactId>
         <version>1.8</version>
         <scope>system</scope>
         <systemPath>${basedir}/lib/jhove/jhove-handler.jar</systemPath>
+    </dependency>
+    <dependency>
+        <groupId>edu.harvard.hul.ois.jhove</groupId>
+        <artifactId>jhove-module</artifactId>
+        <version>1.8</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/lib/jhove/jhove-module.jar</systemPath>
     </dependency>
     <dependency>
         <groupId>edu.harvard.hcl</groupId>
@@ -86,6 +99,16 @@
         <version>unknown</version>
         <scope>system</scope>
         <systemPath>${basedir}/lib/hclaps.jar</systemPath>
+    </dependency>
+    <dependency>
+    	<groupId>org.codehaus.woodstox</groupId>
+    	<artifactId>woodstox-core-asl</artifactId>
+    	<version>4.0.7</version>
+    </dependency>
+    <dependency><!-- because of JHOVE -->
+    	<groupId>xerces</groupId>
+    	<artifactId>xercesImpl</artifactId>
+    	<version>2.7.1</version>
     </dependency>
     <dependency>
         <groupId>nz.govt.natlib</groupId>
@@ -103,6 +126,21 @@
     	<groupId>org.jdom</groupId>
     	<artifactId>jdom</artifactId>
     	<version>1.1.3</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.jdom</groupId>
+    	<artifactId>jaxen-jdom</artifactId>
+    	<version>1.0-FCS</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.jdom</groupId>
+    	<artifactId>jaxen-core</artifactId>
+    	<version>1.0-FCS</version>
+    </dependency>
+    <dependency>
+    	<groupId>saxpath</groupId>
+    	<artifactId>saxpath</artifactId>
+    	<version>1.0-FCS</version>
     </dependency>
     <dependency>
         <groupId>com.twmacinta</groupId>

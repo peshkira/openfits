@@ -16,29 +16,29 @@ for i in "$JCPATH"/*.jar; do
 	APPCLASSPATH="$APPCLASSPATH":"$i"
 done
 
-JCPATH=${FITS_HOME}/lib/droid
+#JCPATH=${FITS_HOME}/lib/droid
 # Add on extra jar files to APPCLASSPATH
-for i in "$JCPATH"/*.jar; do
-	APPCLASSPATH="$APPCLASSPATH":"$i"
-done
+#for i in "$JCPATH"/*.jar; do
+#	APPCLASSPATH="$APPCLASSPATH":"$i"
+#done
 
-JCPATH=${FITS_HOME}/lib/jhove
+#JCPATH=${FITS_HOME}/lib/jhove
 # Add on extra jar files to APPCLASSPATH
-for i in "$JCPATH"/*.jar; do
-	APPCLASSPATH="$APPCLASSPATH":"$i"
-done
+#for i in "$JCPATH"/*.jar; do
+#	APPCLASSPATH="$APPCLASSPATH":"$i"
+#done
 
-JCPATH=${FITS_HOME}/lib/nzmetool
+#JCPATH=${FITS_HOME}/lib/nzmetool
 # Add on extra jar files to APPCLASSPATH
-for i in "$JCPATH"/*.jar; do
-	APPCLASSPATH="$APPCLASSPATH":"$i"
-done
+#for i in "$JCPATH"/*.jar; do
+#	APPCLASSPATH="$APPCLASSPATH":"$i"
+#done
 
-JCPATH=${FITS_HOME}/lib/nzmetool/adapters
+#JCPATH=${FITS_HOME}/lib/nzmetool/adapters
 # Add on extra jar files to APPCLASSPATH
-for i in "$JCPATH"/*.jar; do
-	APPCLASSPATH="$APPCLASSPATH":"$i"
-done
+#for i in "$JCPATH"/*.jar; do
+#	APPCLASSPATH="$APPCLASSPATH":"$i"
+#done
 
 cmd="java -classpath \"$APPCLASSPATH:$FITS_HOME/xml/nlnz\" edu.harvard.hul.ois.fits.Fits $args"
 

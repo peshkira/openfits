@@ -1,0 +1,3 @@
+# Maven Build ignored files and folders
+target/
+

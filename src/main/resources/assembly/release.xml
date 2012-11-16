@@ -40,4 +40,15 @@
       <outputDirectory>docs</outputDirectory>
     </fileSet>
   </fileSets>
+  <dependencySets>
+    <dependencySet>
+       <outputDirectory>lib/</outputDirectory>
+       <unpack>false</unpack>
+    </dependencySet>
+    <dependencySet>
+       <outputDirectory>lib/</outputDirectory>
+       <unpack>false</unpack>
+       <scope>system</scope>
+    </dependencySet>
+  </dependencySets>
 </assembly>

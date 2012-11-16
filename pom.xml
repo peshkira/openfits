@@ -28,7 +28,7 @@
             </manifest>
           </archive>
           <descriptors>
-            <descriptor>src/main/resources/assembly/zip.xml</descriptor>
+            <descriptor>src/main/resources/assembly/release.xml</descriptor>
           </descriptors>
         </configuration>
       </plugin>

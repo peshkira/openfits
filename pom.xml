@@ -2,7 +2,7 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>edu.harvard.hul</groupId>
+  <groupId>edu.harvard.hul.ois</groupId>
   <artifactId>openfits</artifactId>
   <version>0.6.2</version>
   <name>Open FITS</name>
@@ -26,6 +26,13 @@
     	<groupId>commons-configuration</groupId>
     	<artifactId>commons-configuration</artifactId>
     	<version>1.5</version>
+    </dependency>
+    <dependency>
+        <groupId>edu.harvard.hul.ois</groupId>
+        <artifactId>ots</artifactId>
+        <version>1.0.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/lib/ots-1.0.0.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

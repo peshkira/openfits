@@ -19,9 +19,21 @@
           <target>1.6</target>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>edu.harvard.hul.ois.fits.Fits</mainClass>
+            </manifest>
+          </archive>
+          <descriptors>
+            <descriptor>src/main/resources/assembly/zip.xml</descriptor>
+          </descriptors>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
-  
   <dependencies>
     <dependency>
     	<groupId>commons-configuration</groupId>
